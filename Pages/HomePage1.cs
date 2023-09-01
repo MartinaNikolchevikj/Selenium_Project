@@ -26,12 +26,5 @@ namespace Selenium_Final_Project.Pages
         {
             Assert.That(driver.Url, Is.EqualTo("https://electro.madrasthemes.com/home-v3-full-color-background/"));
         }
-
-        public void NavigateToHomePage()
-        {
-            IWebElement home = driver.FindElement(By.XPath("//a[@class = 'header-logo-link']"));
-            home.Click();
-        }
-
     }
 }
